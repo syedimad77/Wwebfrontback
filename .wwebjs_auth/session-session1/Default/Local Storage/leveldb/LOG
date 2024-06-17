@@ -1,5 +1,0 @@
-2024/06/16-14:30:47.668 1144 Creating DB C:\Users\Syed\OneDrive\Documents\NewChatbot\Server\.wwebjs_auth\session-session1\Default\Local Storage\leveldb since it was missing.
-2024/06/16-14:30:47.833 1144 Reusing MANIFEST C:\Users\Syed\OneDrive\Documents\NewChatbot\Server\.wwebjs_auth\session-session1\Default\Local Storage\leveldb/MANIFEST-000001
-2024/06/16-14:35:49.828 527c Level-0 table #5: started
-2024/06/16-14:35:49.840 527c Level-0 table #5: 26480 bytes OK
-2024/06/16-14:35:49.848 527c Delete type=0 #3
