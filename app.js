@@ -59,7 +59,7 @@ const createWhatsappSession = (id, socket) => {
 
     const client = new Client({
         puppeteer: {
-            headless: false,
+            headless: true,
         },
         webVersionCache: {
             type: "remote",
@@ -164,7 +164,7 @@ app.post('/postlogin', (req, res) => {
 // Socket.IO configuration
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000", // Replace with your frontend's URL
+        origin: "*", // Replace with your frontend's URL
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type"],
         credentials: true
