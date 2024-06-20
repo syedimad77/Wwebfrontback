@@ -146,9 +146,6 @@ app.post('/sendmessage', sendMessageLimiter, storageUpload.single('file'), async
 
 
 // Routes
-app.get("/", (req, res) => {
-    res.send("<h1>Hello World</h1>");
-});
 
 app.post('/postlogin', (req, res) => {
     const { username, password } = req.body;
