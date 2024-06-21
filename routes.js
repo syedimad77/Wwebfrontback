@@ -16,6 +16,11 @@ const createWhatsappSession = (id, socket) => {
         return;
     }
 
+    if (allSessionsObject[id]) {
+        socket.emit("error", { message: "Session already exists. Please use a unique session ID." });
+        return;
+    }
+
     const client = new Client({
         puppeteer: {
             headless: true,
