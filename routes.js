@@ -24,15 +24,6 @@ const createWhatsappSession = (id, socket) => {
     const client = new Client({
         puppeteer: {
             headless: true,
-            args: [
-                '--no-sandbox',
-                '--disable-setuid-sandbox',
-                '--disable-dev-shm-usage',
-                '--disable-accelerated-2d-canvas',
-                '--disable-gpu',
-                '--window-size=1920x1080'
-            ],
-            maxConcurrency: 5,
         },
         webVersionCache: {
             type: "remote",
@@ -43,7 +34,7 @@ const createWhatsappSession = (id, socket) => {
         }),
     });
 
-    client.on('qr', async (qr) => {
+    client.on('qr', (qr) => {
         console.log('QR RECEIVED', qr);
         socket.emit("qr", { qr });
     });
