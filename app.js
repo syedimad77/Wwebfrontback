@@ -14,7 +14,7 @@ app.use(cors());
 // Socket.IO configuration
 const io = new Server(server, {
     cors: {
-        origin: "*", // Replace with your frontend's URL
+        origin: "https://wwebfrontback.onrender.com", // Replace with your frontend's URL
         methods: ["GET", "POST"],
         allowedHeaders: ["Content-Type"],
         credentials: true
